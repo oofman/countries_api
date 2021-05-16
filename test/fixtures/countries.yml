@@ -1,0 +1,10 @@
+south-africa:
+  name: South Africa
+  alpha2: za
+  alpha3: zaf
+  active: 1
+botswana:
+  name: Botswana
+  alpha2: bw
+  alpha3: bwa
+  active: 1

@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "a73b05e4-1f38-45da-94d8-989fe26a3f6e",
+		"name": "countries API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"countries"
+					],
+					"query": [
+						{
+							"key": "alpha2",
+							"value": "at",
+							"disabled": true
+						},
+						{
+							"key": "alpha3",
+							"value": "aut",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Country",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/country?alpha2=at",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"country"
+					],
+					"query": [
+						{
+							"key": "alpha2",
+							"value": "at"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UnDelete Country",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/country?alpha2=at",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"country"
+					],
+					"query": [
+						{
+							"key": "alpha2",
+							"value": "at"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
