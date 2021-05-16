@@ -3772,3 +3772,15 @@ Processing by Api::V1::CountriesController#index as JSON
 Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.7ms | Allocations: 8080)
 
 
+Started GET "/api/v1/countries?alpha2=za" for 127.0.0.1 at 2021-05-16 19:23:03 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CountriesController#index as JSON
+  Parameters: {"alpha2"=>"za"}
+  Rendering api/v1/countries/index.json.jbuilder
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."active" = ? AND "countries"."alpha2" = ?[0m  [["active", 1], ["alpha2", "za"]]
+  ↳ app/views/api/v1/countries/index.json.jbuilder:1
+  Rendered api/v1/countries/index.json.jbuilder (Duration: 6.0ms | Allocations: 5007)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 8119)
+
+
